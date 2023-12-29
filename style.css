@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-behavior: smooth;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(45deg,black,green,indigo,red);
+    color:aliceblue;
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#insta,#linkedin{
+    width: 30px;
+    height: auto;
+}
+#pic{
+    border-radius: 50%;
+    width: 150px; 
+    transition-duration: 1500ms;
+    transform-style: preserve-3d;  
+}
+#pic:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+button{
+    cursor: pointer;
+    transition-duration: 1000ms;
+    transform-style: preserve-3d;
+}
+button:hover{
+    transform:scale3d(1,2,0.25);
+}
+
+#top{
+    justify-content: center;
+align-items: center;
+text-align: center;
+flex-wrap: wrap;
+position: relative;
+margin:5px;
+}
+
+h2{
+    text-align: center;
+}
+#content{
+display: grid;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+opacity: 0; 
+animation: fadeIn 1.5s ease-in-out forwards;
+animation-delay: 1000ms;
+}
+
+#T{
+display: flex;
+justify-content: space-between;
+align-items: center;
+overflow-x: auto;
+}
+
+#T ::-webkit-scrollbar{
+width: 0;
+}
+
+#html,#ionic,#react,#python,#js,#css{
+width:70px;
+height:fit-content;
+justify-content: center;
+background-size:contain;
+border: 1px solid black;
+border-radius: 13px;
+}
+
+footer , #F{
+text-align: center;
+justify-content: center;
+align-content:baseline;
+}
+.whole{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+opacity: 0; 
+animation: fadeIn 1.5s ease-in-out forwards;
+animation-delay: 1000ms;
+}
+.container{
+height:300px;
+width:250px;
+min-width: 240px;
+perspective: 500px;
+overflow-x: auto;
+}
+.container::-webkit-scrollbar{
+width: 0;
+}
+
+.card-image{
+height:100%;
+width:100%;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 20px;
+border: 1px solid black;
+}
+.card{
+height:100%;
+width:100%;
+position: relative;
+transform-style: preserve-3d;
+transition-duration: 1500ms;
+border-radius: 20px;
+}
+.card:hover{
+cursor: pointer;
+transform: rotateY(180deg);
+}
+.card-front,.card-back{
+height:100%;
+width:100%;
+position: absolute;
+backface-visibility: hidden;
+background: linear-gradient(40deg,black,blue,red);
+border-radius: 20px;
+}
+.card-front{
+text-align: center;
+justify-content:center;
+display: flex;
+align-items: center;
+border: 1px solid black;
+}
+.card-back{
+transform: rotateY(180deg);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid black;
+}
+
+#linkedin,#insta{
+    transform-style: preserve-3d;
+    transition-duration: 500ms;
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+#linkedin:hover{
+    transform: scale3d(1,1.5,0.5);
+}
+
+#insta:hover{
+    transform: scale3d(1,1.5,0.5);
+}
+
