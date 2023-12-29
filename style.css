@@ -12,7 +12,8 @@ body{
     justify-content: center;
     scroll-behavior: smooth;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(45deg,black,green,indigo,red);
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(174, 101, 113), rgba(148,187,233,1) 100%);
     color:aliceblue;
     opacity: 0; 
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -139,7 +140,8 @@ height:100%;
 width:100%;
 position: absolute;
 backface-visibility: hidden;
-background: linear-gradient(40deg,black,blue,red);
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 border-radius: 20px;
 }
 .card-front{
